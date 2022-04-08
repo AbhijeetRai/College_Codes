@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: heroquotes
+Version: 1.0
+Summary: A package for superhero quotes
+Home-page: https://github.com/AbhijeetRai/superheroquotes
+Author: Abhijeet Rai
+Author-email: abraj306@gmail.com
+License: UNKNOWN
+Description: A module for comics lovers, which prints the qutoes from super heros of marvel & dc comics and movies.
+        
+Keywords: Super hero quotes,Superhero quotes,Marvel,DC,dc,Dc
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

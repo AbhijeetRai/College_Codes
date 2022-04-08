@@ -1,0 +1,36 @@
+comparison between normal and numpy array
+
+Normal Array -
+        Strictly typecode ka hi data type chaie
+
+        warna aise errors aate hai -
+        integer argument expected, got float
+
+        exception - typecode float ka dia that is 'd'
+        aur int data dia to chalega
+
+Numpy Array -
+        Jaha tak upcasting downcasting possible hai, hetrogenous data ko homogenous banane k lie,
+        waha tak casting hogi
+
+example
+
+int string me ho jaaega
+a = array(["Abhijeet",2.1,2])
+a = array(["Shasi","Ashish",10],str)
+
+float string me ho jeeaga
+a = array(["Abhijeet",2.1,2])
+a = array([10.5,22.1,22.5,27.3],str)
+
+int float me ho jaaega
+a = array([1,2,3.1])
+a = array([1,2,3,4,5.5],float)
+
+float int me ho jaaega (with loss of data after decimal)
+a = array([1,2,3,4,5.5],int)
+
+
+Note - Typical string value, "Core2Web", "BiEncaps" int ,float me typecast nai hogi
+but string "10" "20" jo ki string k andar hidden ek numerical value chaie
+int aur float me typecast ho jaaegi

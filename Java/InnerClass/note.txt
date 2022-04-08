@@ -1,0 +1,24 @@
+
+                                                Static members allowed?            Can access outer class' non static members directly
+
+    Normal Inner class                                   No                                             Yes
+
+    Static nested inner class                            Yes                                       No (Make object)
+
+   Static Method local inner class                       No                                        No (Make object)
+
+   Instance method local inner class                     No                                             Yes
+
+   Annonymous inner class                                No                                             Yes
+
+
+Local variables of METHOD (not outer class), where (static AND Instance) method local inner class is present,
+act as final in (static AND Instance) method local "INNER CLASS" only. (Not outside class)
+
+Constructor of normal inner class is always parametrised
+
+
+
+Tip-
+To see the bytecode of nested class in prg1.java, use 'Water$Tab_Button'
+or ' Water\$Fish.class'. 

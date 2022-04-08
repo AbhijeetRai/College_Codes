@@ -1,0 +1,11 @@
+Question)
+In java, 'super()' is the first line of any kind of constructor, by default. But why ?
+
+->> 
+'super()' gives call to default constructor of superclass. 'super()' is at first line of 
+any constructor, to initialise variables of superclass then variables of subclass are
+initialised (convention).
+
+Inheritance has to happen. But not without initialisation of superclass variables. 
+How superclass variables will be inherited, if they are not initialised. Which is why
+to initialise superclass variables 'super()' is the first call.

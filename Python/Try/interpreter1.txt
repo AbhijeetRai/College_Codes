@@ -1,0 +1,62 @@
+The ">>>" sign seen on the python's interactive shell is called a prompt.
+Python's interactive shell, which appears after firing
+command "python3" (if we are working on python version 3)
+(because python version 2 is no longer supported)
+on terminal, has two such prompts.
+
+a) ">>>" - Primary prompt
+b) "..." - Secondary prompt
+
+Explaination
+
+When we fire command 'python3' on terminal, >>> sign is
+immediately seen on screen. This ">>>" sign is nothing
+but primary prompt.
+
+However, once we fire command 'python3' on terminal
+interpreter will first print a welcome message stating
+its(interpreter's) version number and a copyright notice.
+And then interpreter will print the first
+prompt or primary prompt.
+
+Whenever cursor is blinking next to a primary prompt on terminal,
+it means interpreter will take 'one and only one'
+instruction and execute it immediately if the instruction is found valid
+
+Example
+>>> a = 10
+>>> b = 20
+>>> print(a + b)
+
+Firstly interpreter will immediately execute a = 10,
+while doing so it will create an integer object, store 10
+inside that integer object and bind that
+particular object to variable called 'a'
+
+After executing first instruction, interpreter moves to
+next instruction b = 20, and immediately executes it,
+just like it executed a = 10, and finally prints the output.
+
+
+However once we get to see secondary prompt that is "...",
+it means that, now we have entered a block, that block can be
+if block, else block, elif block, while, for or any other block.
+
+Once inside a block, '...' signifies,
+all the instructions of block, entered in front of "..."
+will be executed by interpreter together "as a series of instructions".
+
+>>> lockdown = True
+>>> if lockdown == True:
+...     print("Do not go out")
+...     print("Take care")
+...     print("Stay at home")
+... else:
+...     print("You can go out")
+...     print("You can conduct social meeting")
+
+here after writing if statement, naturally interpreter
+enters in if block and starts showing "..."(secondary prompt)
+to indicate that now interpreter is ready to take
+'series of instructions', which will be executed altogether as a
+group if, 'if' staement is found valid.

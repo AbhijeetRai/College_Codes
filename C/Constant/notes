@@ -1,0 +1,13 @@
+- Constant variables may belong to any data type in C.
+- They are 'read only variables'
+- We can read or scan values in them. (We can use those variables to read values, in scanf)
+- We can read value in a constant variable multiple time, with warning only (writing into constant object)
+- We can perfrom arithmetic operations on contant variable, and store result in non constant variable
+
+However we cannot modify values of constant variables. We will face errors like
+prg7.c:7:10: error: increment of read-only variable ‘x’
+         x++;
+          ^~
+prg7.c:8:11: error: assignment of read-only variable ‘x’
+         x = 2;
+           ^

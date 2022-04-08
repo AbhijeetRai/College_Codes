@@ -1,0 +1,9 @@
+1) Recursion in constructor not allowed in Java
+2) Recursion is allowed everywhere else in Java
+3) this() and super() fight to be first line of constructor
+4) 'this' and 'super' cannot be used in static methods.
+5) this() and super() can be used in constructor only, not in any methods
+
+
+6) With help of 'this' and 'super' we can access static method and variables (prg5.java)
+7) Static members are inherited in classes and abstract classes, private are not.

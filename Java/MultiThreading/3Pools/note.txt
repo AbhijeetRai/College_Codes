@@ -1,0 +1,25 @@
+abstract void execute(Runnable Command)	 <---	Executor (I)				|		public class Executors {
+			   			     ^					|			
+						     |					|			public static ExecutorService newFixedThreadPool(int nThreads) {
+			   			     |					|			
+						     |					|				return new ThreadPoolExecutor();
+						     |					|			}
+			   			     |					|		}
+			   			     |					|
+abstract void shutdown()		<---    ExecutorService (I)	   		|
+		           			     ^					|
+			   			     |					|
+			   			     |					|
+			   		  	     |					|
+		   			     ThreadPoolExecutor (C)			|
+						     |					|
+					   	     |					|
+					   	     |					|
+					   	     					|
+					   void execute(Runnable command) {		|
+											|
+					   }						|
+											|
+						void shutdown()	{			|
+									        	|
+						}					|

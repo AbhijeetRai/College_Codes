@@ -1,0 +1,18 @@
+BuffereReader's method
+//METHOD USED THROWS FOR CHECKED EXCEPTION
+
+private void ensureOpen() throws IOException {
+        if (in == null)
+            throw new IOException("Stream closed");
+}
+
+
+String's method
+//UNCHECKED EXCEPTION DIRECTLY THROWN
+
+public char charAt(int index) {
+        if ((index < 0) || (index >= value.length)) {
+            throw new StringIndexOutOfBoundsException(index);
+        }
+        return value[index];
+}

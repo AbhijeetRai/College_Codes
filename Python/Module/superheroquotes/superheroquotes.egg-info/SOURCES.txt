@@ -1,0 +1,7 @@
+README.txt
+setup.py
+superheroquotes.py
+superheroquotes.egg-info/PKG-INFO
+superheroquotes.egg-info/SOURCES.txt
+superheroquotes.egg-info/dependency_links.txt
+superheroquotes.egg-info/top_level.txt

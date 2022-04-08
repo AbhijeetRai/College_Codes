@@ -1,0 +1,2 @@
+'throw keyword' is used to used to create exception ourseleves explicitly
+Any statement written after throw becomes unreachable.

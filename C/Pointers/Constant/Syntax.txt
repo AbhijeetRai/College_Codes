@@ -1,0 +1,13 @@
+int a;                              (variable)
+int *ptr                            (pointer)
+
+const int a
+const int *ptr                      (pointer to constant)
+
+int const a
+int const *ptr                      (pointer to constant)
+
+const int* const pointer            (constant pointer, to constant)
+int const* const pointer
+
+int* const pointer                  (constant pointer)

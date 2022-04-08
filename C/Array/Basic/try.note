@@ -1,0 +1,6 @@
+									C 				Java
+	Neither size, nor initializer given to array		       Error			   Error / Exception	
+
+	Only size or only initializer given to array			OK				 OK
+
+	Both size and initializer given to array			OK				Error

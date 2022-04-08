@@ -1,0 +1,31 @@
+(A header file can be used to define functions, which you frequently use).
+(So that you can simply import the header file and call the function, whenever needed).
+(Instead of defining the same function, again and again).
+(Here, I have written a header file(and function inside that) to find factorial of a given integer).
+
+
+While writing a customised header file in 'C' say, "fact.h".
+
+There are two possible ways to store "fact.h" such that it is visible to any program,
+or it can be included or imported in any program. One in the same folder
+as that of program (where code is written) or in standard location that is "/usr/include".
+
+Storing the header file fact.h in the same folder where code is written,
+will make fact.h visible to all files of that folder only. It will not be visible outside the folder
+
+Note that "/usr/include" will act as global storage, and header file written
+there can be imported from any program at any location in the local machine.
+
+
+On side note ->
+To save file at "/usr/include" you need to be logged in as root explicitly. Which you can
+do by typing command "sudo -i" on terminal. It will then ask for password. (Chances are)
+if you are only user in Linux of your local machine. You just have to enter your password
+(password while typing, will not be seen, but type it correctly anyway). You will be logged
+in as a root user. Save a header file at "/usr/include" and press "Ctrl + D" to log out(come out)
+from root user.
+
+
+While importing header file from same directory we can use "" (double quotes) only.
+While importing header file from global storage we can use <> (angular brackets) and ""
+(double quotes as well).

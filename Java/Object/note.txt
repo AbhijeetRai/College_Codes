@@ -1,0 +1,31 @@
+Purpose of equals in various cases ->
+    
+    A) String -> 
+    equals method of String class is used to compare whether two strings have same sequence of characters.
+    String s1 = "Abhi";
+    String s2 = new String("Abhi");
+    s1 and s2 both are equal 
+
+    B) Collection -> 
+    Collection (like List and Set) override the Object's equals method to have value(logic) comparison, instead of reference comparison.
+
+    C) Object -> 
+    equals method of Object is used to compare whether two references point to the same object
+
+
+According to Java API, the contract of equals method (of Object) is such that, if two references(objects) are equal 
+(logic wise where you compare variables or reference wise), their hashCode is
+(should be, if you override equals to have variable comparison of object) same. 
+
+However, it is not needed that unequal objects (reference or logic wise) will have distinct hashCodes. However, distinct hashCodes
+for unequal objects may improve functionality of hash tables. As far as (reasonably) practical, distinct hashCode for unequal objects exist.
+
+So whenever we override equals method to have logical(variable) comparison of two objects for equity instead of reference comparison. 
+We should override hashCode method, too. Because equal objects (variable comparison wise or reference comparison wise) should have 
+same hashCode. This is contract of equals method.
+
+The relationship between 'equals()' and 'hashCode()' enforces that whenever you override the equals method, you must(should) 
+override the hashCode method as well. Failing to comply with this requirement usually results in undetermined, undesired behavior 
+of the class when confronted with Java collection classes or any other Java classes.
+
+

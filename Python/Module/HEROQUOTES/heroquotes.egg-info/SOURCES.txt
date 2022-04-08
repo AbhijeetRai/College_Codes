@@ -1,0 +1,7 @@
+README.md
+setup.py
+heroquotes/__init__.py
+heroquotes.egg-info/PKG-INFO
+heroquotes.egg-info/SOURCES.txt
+heroquotes.egg-info/dependency_links.txt
+heroquotes.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+To reduce boiler plate code, Java 7 introduced union catch blocks. They allow us to treat multiple exceptions in same manner. 
+And handle their exceptions in single block

@@ -1,0 +1,6 @@
+Suppose we have long *ptr and we do ptr - n, then it would mean
+
+ptr - n =
+ptr - n * sizeof(datatype of ptr)
+ptr - n * sizeof(long)
+ptr - n * 8 (in bytes)

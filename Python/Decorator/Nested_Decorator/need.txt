@@ -1,0 +1,56 @@
+Prerequisite
+        i)  Inner functions in Python
+        ii) Decorators in Python      -> (available already, in blog section)
+
+Decorators in Python are used to add extra features to functions.
+Without changing the original code of function.
+
+Let us suppose I already have a function called 'cook_chicken()', which already
+tells me to 'cook chicken'.
+
+def cook_chicken() :
+        print('Cook chicken')
+
+But I now I want to implement two additional functionality(features).
+I want to cook chicken on tandoori and garnish it with corriander.
+
+So, now do I wedge(force) the code of both the tasks in cook_chicken() itself.
+The answer is no. Because if I want to write another function that
+involves tandoori and corriander. I will have to wedge the code for both tasks
+in that function as well. This static unflexible approach leads to repetition
+of code and abuse of resources. This is a bad design practise.
+
+Apart from that, what if cook_chicken is legacy code of your project
+and you do not want to distrub it. Because even if cook_chicken may
+look negligible in size here. Legacy code is of thousand lines. And distrubing
+legacy code, by wedging code of tandoori and corriander in it, is a foolish move
+and open invitation to bugs.
+
+Also programming design principle states that. A class(or function) should be
+open for extension but closed for modification. Which means if you want to add
+a new feature to class/function. You should not modify the old legacy code,
+you should extend it dynamically.
+
+So there has to be some way to implement task of cooking chicken on tandoori,
+and garnishing cooked chicken with corriander, dynamically and flexibly.
+
+That's where your decorators will come in play. 2 decorators, one for cooking
+chicken on tandoori and one decorator to garnish chicken with corriander.
+
+decorator prepare_indigridents() will garnish chicken with corriander. Decorator
+cooking_on_tandoori() will help chicken to be cooked on tandoori.
+
+Pass address of function cook_chicken to prepare_indigridents() and cook_chicken
+variable will store address of wrapper function spices(). And now
+address of wrapper function spices(), stored in variable cook_chicken will
+be passed to decorator cooking_on_tandoori(). Consequently cook_chicken()
+variable will store adress of wrapper function tandoori().
+
+NOTE -> See comments of code given below thoroughly, and run the comments dry
+for crystal clear understanding. 
+
+PS -> Now what if I want to cook_mutton() on tandoori and prepare spices, corriander for 
+kadhai panner, I wont have to wedge code of these tasks in functions of cook_mutton() 
+and cook_panner(). With these decorators already in our pocket, We can easily use those 
+decorators. Without ever needing write code for tandoori, spices and corriander. 
+This approach is making our design flexible, dynamic and resilient. 

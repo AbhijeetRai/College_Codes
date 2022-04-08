@@ -1,0 +1,4 @@
+Once a goto - label is inside switch, it obeys all the rules of switch label. 
+Consider it as a case of switch
+
+You can give go-to label a  break in switch, which you cannot if go-to label is outside switch.

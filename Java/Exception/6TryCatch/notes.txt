@@ -1,0 +1,30 @@
+If we only write try in our code, we get error like
+prg1.java:5: error: 'try' without 'catch', 'finally' or resource declarations
+		try {
+		^
+1 error
+
+
+
+
+
+Use ->
+As studied in 'Sequence' folder if any exception occurs in any method.
+JVM checks whether that method has handling code(try - catch).
+If the method has try-catch or handling code, method is resumed.
+Otherwise method is abnormally terminated and stack frame of method is removed
+
+
+							Flow of method resumed ?
+CheckedException occured with try catch				Yes
+UncheckedException occured with try catch			Yes
+
+CheckedExeption occured without try catch			No
+UnCheckedException occured wihtout try catch			No
+
+
+
+
+TIP -> 'CHECKED' Exceptions must be caught(try-catch) or declared to be thrown(throws)
+---	There is no such rule for 'UNCHECKED' Exception
+---

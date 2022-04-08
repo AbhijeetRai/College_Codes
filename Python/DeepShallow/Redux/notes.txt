@@ -1,0 +1,19 @@
+For a shallow copy of list or tuple, address of nested (present inside list or tuple) element like, 
+- integer
+- list 
+- tuple
+- set
+- dictionary
+will be same, simply on principle "If content is same, address is same in Python"
+
+
+But in a deep copy of List or tuple, address of all mutable objects(list, set, dictionary) is kept different,
+such that if one mutable object change, copy is not disturbed
+
+
+
+
+
+
+PS ->
+I have not tried for set(only immutable objects)

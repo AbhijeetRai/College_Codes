@@ -1,0 +1,4 @@
+Finally will be used for clean up code like, for closing server, closing file.
+It will always be executed regardless of exception
+
+We can either have try-finally	or try-catch-finally

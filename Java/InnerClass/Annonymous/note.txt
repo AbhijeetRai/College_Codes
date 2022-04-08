@@ -1,0 +1,2 @@
+Interfaces and abstract classes can be parent in annonymous inner class.
+We can have parametrised annonymous inner class, as long as parent is not an interface

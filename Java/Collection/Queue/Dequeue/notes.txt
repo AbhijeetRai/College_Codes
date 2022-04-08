@@ -1,0 +1,10 @@
+        DeQueue
+           |
+         __ __
+    |            |
+LinkedList      ArrayDeQueue
+
+
+
+There are various abstract methods in Deque interface as shown in the png image in this folder.
+The body to these methods is given by the sub classes of Deque interface.

@@ -1,0 +1,11 @@
+int arr[] = {1, 2, 3, 4, 5};
+int *ptr1 = arr;                    //pointer to 0th element of array 
+int *ptr2 = &arr[0];                //pointer to 0th element of array 
+
+ptr1 and ptr2 are pointers which point to 0th element of the array. 
+But we can also have pointer, which can point to whole array. 
+(Although the base address of array, the address of whole array and address of 0th element of array are same).
+
+int (*ptr3)[5] = &arr                     //pointer to whole array of size 5
+
+Pointer to 0th element of array and pointer to whole array are totally different

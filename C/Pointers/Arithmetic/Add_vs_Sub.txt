@@ -1,0 +1,10 @@
+					Addition of Pointer			Substraction of pointer
+	With int				Yes					Yes
+
+	With char				Yes					Yes
+
+	With float / double			No					No
+
+	With pointer				No					Yes
+
+	Cummutative				Yes					No

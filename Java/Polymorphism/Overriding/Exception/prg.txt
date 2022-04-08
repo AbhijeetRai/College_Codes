@@ -1,0 +1,13 @@
+NOTE ->
+Golden Rule of the thumb is
+
+If overriding method of child class is throwing a 'checked exception'.(checked exception only)
+Then, overridden method of parent class must also throw an exception, which will be in hierarchy of,
+checked exception thrown by child class method.
+
+And exception of overridden method of parent class, must be equal to or greater to,
+checked exception thrown by child class overridding method.
+
+
+
+As long as this rule is not violated, everything will be fine.

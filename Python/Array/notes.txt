@@ -1,0 +1,7 @@
+array(typecode [, initializer])
+
+This function returns new array, whose elements are 'restricted' by typecode, and intialised
+from 'OPTIONAL' intialiser value which must be
+-list
+-string
+-iterable

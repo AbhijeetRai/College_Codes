@@ -1,0 +1,10 @@
+Inside a method, if any exception occurs, that method is responsible to create an exception Object.
+
+After creating exception Object, method handovers that Object to JVM.
+JVM will check whether the method contains, any exception handling code.
+If method does not contain exception handling code.
+JVM terminates the method abnormally and removes its stackframe.
+
+Then JVM identifies caller method and checks whether caller method contains any handling code.
+If caller method does not contain any handling code, 
+then JVM terminates caller method abnormally and terminates its stackframe.

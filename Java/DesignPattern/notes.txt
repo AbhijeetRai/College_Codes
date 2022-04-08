@@ -1,0 +1,2 @@
+Find the codes from Head First Design Patterns at 
+//wickedlysmart.com/head-first-design-patterns/

@@ -1,0 +1,6 @@
+Various tools are available to generate documentation of Python. One of such tools is pdoc. Follow these steps to generate python documentation.
+
+1) Type command 'pip3 install pdoc3' on terminal.
+2) pdoc --html name
+
+Replace name with package/directory/file name

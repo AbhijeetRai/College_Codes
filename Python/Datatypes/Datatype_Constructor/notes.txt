@@ -1,0 +1,19 @@
+In data structures like list, tuple or set.
+Whenever you pass list, tuple or set in their constructor. Their constructors immediately unpack it.
+
+Whenever a dictionary is passed in the constructor of list, tuple or set. Only the key of the dictionary will be unpacked.
+
+
+Note-->
+Constructors of List, Tuple, Set and Dictionary are desinged to accept only 1 argument
+Elements passed to list, tuple and set constructor must be iterable
+
+
+Generally dictionary can be passed in constructor of Dictionary
+or
+ls = dict([(7, "MSD"), (10, "Sachin")])
+>>> ls
+{7: 'MSD', 10: 'Sachin'}
+
+
+Only dictionary has 4 constructors unlike list, tuple and set having 2 constructors only

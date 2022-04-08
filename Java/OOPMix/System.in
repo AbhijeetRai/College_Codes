@@ -1,0 +1,10 @@
+Explaination of line ->
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+BufferedReader has constructor "BufferedReader(Reader in)"
+
+InputStreamReader is child of Reader.
+InputStreamReader has constructor "InputStreamReader(InputStream in)".
+
+System.in is static field to hold instance of "InputStream class". Which is initially null, 
+but holds InputStream at runtime, with help of method 'initializeSystemClass()' of class System.

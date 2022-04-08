@@ -1,0 +1,7 @@
+If operator is '||' (or)
+    and value at left is 1, expression on right will not be evaluated.
+    if value at left is 0, then expression on right will be evaluated.
+
+If operator is '&&' (and)
+    and value at left is 0, expression on right will not be evaluated.
+    if value at left is 1, then expression on right will be evaluated.

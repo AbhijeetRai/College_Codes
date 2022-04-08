@@ -1,0 +1,15 @@
+Python is dynamically typed language. In Python,
+we can pass one function to another function,
+we can return one function from another function.
+
+But while doing so (both the tasks of passing and returning functions) we only use the name of function.
+Without parentheses.
+
+Example
+return function
+"NOT" return function()
+
+Because the name of function is address of the first instruction in it.
+
+
+Passing and returning functions is not possible in Java

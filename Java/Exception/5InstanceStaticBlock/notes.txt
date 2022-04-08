@@ -1,0 +1,5 @@
+
+					Instance	Static
+Can we have nested block	   	  Yes		  No
+Can we have block inside method  	  Yes		  No
+

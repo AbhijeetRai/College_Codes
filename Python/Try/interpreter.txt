@@ -1,0 +1,34 @@
+
+Documentation -
+
+When commands are read from a tty,
+the interpreter is said to be in interactive mode.
+In this mode it prompts for the next command with the primary prompt,
+usually three greater-than signs (>>>);
+for continuation lines it prompts with the secondary prompt,
+by default three dots (...).
+The interpreter prints a welcome message stating its version number
+and a copyright notice before printing the first prompt:
+
+example -
+
+>>> the_world_is_flat = True
+>>> if the_world_is_flat:
+...     print("Be careful not to fall off!")
+...
+Be careful not to fall off!
+
+explaination -
+
+Python interpreter has 2 prompts
+>>> (primary prompt) and ... (secondary prompt)
+"">>>" signifies interpreter is ready to take command
+while "..." means continuation lines
+
+example
+
+>>> world = True
+>>> if world:
+...     print("us")
+...
+us

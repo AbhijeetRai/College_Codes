@@ -1,0 +1,20 @@
+FORMULA for pointer addition
+
+If I have integer pointer, (pointer to an integer) int *ptr.
+And if I increment ptr by 1, then it would result in, 
+
+ptr + 1
+ptr + 1 * (size of data type of ptr)
+ptr + 1 * sizeof(int)
+ptr + 1 * 4
+ptr + 4   (in bytes)
+
+
+ptr + 3 =
+ptr + 3 * (size of data type of ptr)
+ptr + 3 * sizeof(int)
+ptr + 3 * 4
+ptr + 12 
+
+address is ptr would be added by 12 bytes more. 
+(That is 3 integers next)

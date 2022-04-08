@@ -1,0 +1,8 @@
+Throws keyword is only required for compile time exceptions or checked exceptions
+
+
+By help of throws keywrod we can provide information to caller of method about exception
+
+
+Throws keyword is required only to convince compiler and usage of throws keyword does not prevent abnormal termination of method
+Throws is not handling code

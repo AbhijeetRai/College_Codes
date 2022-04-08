@@ -1,0 +1,5 @@
+System.out.println()
+
+In System class, out is null, then how does it get intialized to hold instance of PrintStream.
+Actually when JVM is intialised, intializeSystemClass() method of System class is called.
+This method initialised out variable through setOut() method.

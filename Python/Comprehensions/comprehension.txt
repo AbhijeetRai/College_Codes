@@ -1,0 +1,46 @@
+Any comprehension in Python, say list or dictionary comprehension is made up of three things.
+An expression, an iterable and an optional condition. For example look at the example of list 
+comprehensions given below
+
+>>> [ord(x) for x in ['A', 'B', 'C']]
+Output - [65, 66, 67]
+ord(x) was an expression for the iterable(list) ['A', 'B', 'C']. And we did not put any condition,
+as putting condition is not mandatory.
+
+>>> [chr(x) for x in (65, 97, 66, 98) if x < 97]
+Output - ['A', 'B']
+Here we have expression chr(x) for iterable(tuple) but with condition such that, value in the tuple
+should be lesser than 97. As simple as that
+
+We can use comprehensions and unpacking at the same time
+>>> a, b = [int(x) for x in [1.1, 2.2]]
+Output a = 1, b = 2
+
+Now, list comprehension is understood, time to make some 
+*HAPPY PROGRAMMER NOISES* and move on to dictionary comprehensions
+
+Dictionary comprehensions are written in same way, except, we
+have to assign it with key and value both in expressions
+
+>>> {x : x ** 2 for x in range(1, 5)}
+{1: 1, 2: 4, 3: 9, 4: 16}
+
+x : x ** 2 was an expression where put x as key and x squared as value,
+from iterable range(1, 5) and put no condition on that. As condition is optional
+
+>>> {x : x ** 2 for x in range(1, 5) if x % 2 == 0}
+{2: 4, 4: 16}
+
+x : x ** 2 was an expression where put x as key and x squared as value,
+from iterable range(1, 5) but do only if every x(or value) from iterable range(1, 5)
+is even or divisible by 2. Or produces remainder as 0 when divied by 2.
+
+Try unpacking with dictionary comprehension
+a, b = {x : x ** 2 for x in range(1, 5) if x % 2 == 0}
+Output a = 2 b = 4.
+
+While unpacking beware of 'not enough values to unpack' and 
+'too many values to unpack' in both comprehensions. 
+But that's the story(blog) for another day.
+Sayonara.
+

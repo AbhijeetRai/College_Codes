@@ -1,0 +1,13 @@
+class Demo {
+
+        public static void main(String[] args) {
+
+                int[][] arr1 = {new int[]{1, 2}, new int[]{3, 4}};
+
+                int[][] arr2 = {new int[2], new int[2]};
+                
+                int[][] arr3 = new int[2][2];   
+                arr3[0] = new int[2];
+                arr3[1] = new int[2];
+        }
+}

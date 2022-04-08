@@ -1,0 +1,42 @@
+1.
+In operartion ++a
+consider function
+
+a = a+1
+return a
+
+and there is only one reference of a, everytime
+
+
+
+2.
+In operation a++
+consider function
+
+temp = a
+a = a+1
+return temp
+
+and there is new refernce of temp everytime.
+
+
+Steps -
+1. Always return reference(same reference for pre) (different for post). "Never return value"
+2  and do basic maths for grouping
+        Example
+        a + b + c
+        first find final value for (a+b) after returning reference
+        then do (a+b) + c
+
+
+        a + b + c + d
+        firstly find answer and value for (a+b) = say ans
+        then ans + c = say ans'
+        then put ans' + d
+        for final answer
+
+Or
+
+Tip - while performing operartion
+- consider basic grouping of variable
+- always reference is returned (same in ++a) (different in a++)
